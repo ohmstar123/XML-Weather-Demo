@@ -19,11 +19,18 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
+
+            // the current date
+            currentDateLabel.Text = DateTime.Now.ToString("dddd MMMM dd yyy");
+
             // the current information is in index 0, thus why all information is retreived from there
             cityOutput.Text = Form1.days[0].location;
-            tempLabel.Text = Form1.days[0].currentTemp;
+            tempLabel.Text = Form1.days[0].currentTemp + "°C";
             minOutput.Text = Form1.days[0].tempLow;
             maxOutput.Text = Form1.days[0].tempHigh;
+
+
+            conditionLabel.Text = Form1.days[0].condition + "\n" + Form1.days[0].windType;    
         }
 
         /// <summary>

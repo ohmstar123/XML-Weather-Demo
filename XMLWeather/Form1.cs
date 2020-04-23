@@ -75,6 +75,15 @@ namespace XMLWeather
             // find the temperature element and add the value attribute, (current temp), to days[0], (today)
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");
+
+            // find the symbol element and add the name attribute, (current condition), to days[0], (today)
+            reader.ReadToFollowing("weather");
+            days[0].condition = reader.GetAttribute("value");
+
+            // find the wind speed element and add the name attribute, (windType), to days[0], (today)
+            reader.ReadToFollowing("wind");
+            reader.ReadToFollowing("speed");
+            days[0].windType = reader.GetAttribute("name");
         }
     }
 }
