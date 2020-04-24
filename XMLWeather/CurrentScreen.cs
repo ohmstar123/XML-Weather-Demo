@@ -30,6 +30,10 @@ namespace XMLWeather
             maxOutput.Text = Form1.days[0].tempHigh + "°C";
             conditionLabel.Text = Form1.days[0].condition + "\n" + Form1.days[0].windType;
             lastUpdatedLabel.Text = "Last Updated \n" + Form1.days[0].lastUpdate;
+            sunriseOutput.Text = Form1.days[0].sunRise;
+            sunsetOutput.Text = Form1.days[0].sunSet;
+            humidityOutput.Text = Form1.days[0].humidityAmount + Form1.days[0].humidityUnits;
+            pressureOutput.Text = Form1.days[0].pressureAmount + Form1.days[0].pressureUnits;
         }
 
         /// <summary>
@@ -45,6 +49,43 @@ namespace XMLWeather
 
             ForecastScreen fs = new ForecastScreen();
             f.Controls.Add(fs);
+        }
+
+        private void moreDetailButton_Click(object sender, EventArgs e)
+        {
+
+            minLabel.Visible = true;
+            minOutput.Visible = true;
+            maxLabel.Visible = true;
+            maxOutput.Visible = true;
+            sunriseLabel.Visible = true;
+            sunriseOutput.Visible = true;
+            sunsetLabel.Visible = true;
+            sunsetOutput.Visible = true;
+            humidityLabel.Visible = true;
+            humidityOutput.Visible = true;
+            pressureLabel.Visible = true;
+            pressureOutput.Visible = true;
+            backButton.Visible = true;
+            moreDetailButton.Visible = false;
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            minLabel.Visible = false;
+            minOutput.Visible = false;
+            maxLabel.Visible = false;
+            maxOutput.Visible = false;
+            sunriseLabel.Visible = false;
+            sunriseOutput.Visible = false;
+            sunsetLabel.Visible = false;
+            sunsetOutput.Visible = false;
+            humidityLabel.Visible = false;
+            humidityOutput.Visible = false;
+            pressureLabel.Visible = false;
+            pressureOutput.Visible = false;
+            backButton.Visible = false;
+            moreDetailButton.Visible = true;
         }
     }
 }

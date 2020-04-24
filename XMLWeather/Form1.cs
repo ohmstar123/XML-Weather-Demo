@@ -72,9 +72,24 @@ namespace XMLWeather
             reader.ReadToFollowing("city");
             days[0].location = reader.GetAttribute("name");
 
+            // find the sun element and add the set and rise attributes, (sunSet), (sunRise), to days[0], (today)
+            reader.ReadToFollowing("sun");
+            days[0].sunSet = reader.GetAttribute("set");
+            days[0].sunRise = reader.GetAttribute("rise");
+           
             // find the temperature element and add the value attribute, (current temp), to days[0], (today)
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");
+
+            // find the humidity element and add the value and unit attributes, (humidityAmount), (humidityUnits), to days[0], (today)
+            reader.ReadToFollowing("humidity");
+            days[0].humidityAmount = reader.GetAttribute("value");
+            days[0].humidityUnits = reader.GetAttribute("unit");
+
+            // find the pressure element and add the value and unit attributes, (pressureAmount), (pressureUnits), to days[0], (today)
+            reader.ReadToFollowing("pressure");
+            days[0].pressureAmount = reader.GetAttribute("value");
+            days[0].pressureUnits = reader.GetAttribute("unit");
 
             // find the wind speed element and add the name attribute, (windType), to days[0], (today)
             reader.ReadToFollowing("wind");
@@ -85,7 +100,7 @@ namespace XMLWeather
             reader.ReadToFollowing("weather");
             days[0].condition = reader.GetAttribute("value");
 
-            //find the lastupdate element and add the value attribute, (lastUpdate), to days[0], (today)
+            // find the lastupdate element and add the value attribute, (lastUpdate), to days[0], (today)
             reader.ReadToFollowing("lastupdate");
             days[0].lastUpdate = reader.GetAttribute("value");
 

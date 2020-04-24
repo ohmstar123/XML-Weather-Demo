@@ -41,53 +41,66 @@
             this.currentDateLabel = new System.Windows.Forms.Label();
             this.lastUpdatedLabel = new System.Windows.Forms.Label();
             this.moreDetailButton = new System.Windows.Forms.Button();
+            this.sunriseLabel = new System.Windows.Forms.Label();
+            this.sunsetLabel = new System.Windows.Forms.Label();
+            this.sunriseOutput = new System.Windows.Forms.Label();
+            this.sunsetOutput = new System.Windows.Forms.Label();
+            this.pressureLabel = new System.Windows.Forms.Label();
+            this.humidityLabel = new System.Windows.Forms.Label();
+            this.humidityOutput = new System.Windows.Forms.Label();
+            this.pressureOutput = new System.Windows.Forms.Label();
+            this.backButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // maxOutput
             // 
-            this.maxOutput.BackColor = System.Drawing.Color.Transparent;
+            this.maxOutput.BackColor = System.Drawing.Color.Black;
             this.maxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.White;
-            this.maxOutput.Location = new System.Drawing.Point(32, 336);
+            this.maxOutput.Location = new System.Drawing.Point(32, 358);
             this.maxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(104, 34);
             this.maxOutput.TabIndex = 32;
+            this.maxOutput.Visible = false;
             // 
             // maxLabel
             // 
             this.maxLabel.AutoSize = true;
             this.maxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxLabel.ForeColor = System.Drawing.Color.White;
-            this.maxLabel.Location = new System.Drawing.Point(32, 370);
+            this.maxLabel.Location = new System.Drawing.Point(32, 392);
             this.maxLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maxLabel.Name = "maxLabel";
             this.maxLabel.Size = new System.Drawing.Size(86, 18);
             this.maxLabel.TabIndex = 31;
             this.maxLabel.Text = "MAX TEMP";
+            this.maxLabel.Visible = false;
             // 
             // minOutput
             // 
-            this.minOutput.BackColor = System.Drawing.Color.Transparent;
+            this.minOutput.BackColor = System.Drawing.Color.Black;
             this.minOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.White;
-            this.minOutput.Location = new System.Drawing.Point(31, 245);
+            this.minOutput.Location = new System.Drawing.Point(31, 267);
             this.minOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(104, 34);
             this.minOutput.TabIndex = 30;
+            this.minOutput.Visible = false;
             // 
             // minLabel
             // 
             this.minLabel.AutoSize = true;
             this.minLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minLabel.ForeColor = System.Drawing.Color.White;
-            this.minLabel.Location = new System.Drawing.Point(31, 279);
+            this.minLabel.Location = new System.Drawing.Point(31, 301);
             this.minLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minLabel.Name = "minLabel";
             this.minLabel.Size = new System.Drawing.Size(81, 18);
             this.minLabel.TabIndex = 29;
             this.minLabel.Text = "MIN TEMP";
+            this.minLabel.Visible = false;
             // 
             // currentOutput
             // 
@@ -203,12 +216,139 @@
             this.moreDetailButton.TabIndex = 75;
             this.moreDetailButton.Text = "View More Details >";
             this.moreDetailButton.UseVisualStyleBackColor = true;
+            this.moreDetailButton.Click += new System.EventHandler(this.moreDetailButton_Click);
+            // 
+            // sunriseLabel
+            // 
+            this.sunriseLabel.AutoSize = true;
+            this.sunriseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sunriseLabel.ForeColor = System.Drawing.Color.White;
+            this.sunriseLabel.Location = new System.Drawing.Point(305, 301);
+            this.sunriseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sunriseLabel.Name = "sunriseLabel";
+            this.sunriseLabel.Size = new System.Drawing.Size(74, 18);
+            this.sunriseLabel.TabIndex = 76;
+            this.sunriseLabel.Text = "SUNRISE";
+            this.sunriseLabel.Visible = false;
+            // 
+            // sunsetLabel
+            // 
+            this.sunsetLabel.AutoSize = true;
+            this.sunsetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sunsetLabel.ForeColor = System.Drawing.Color.White;
+            this.sunsetLabel.Location = new System.Drawing.Point(305, 392);
+            this.sunsetLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sunsetLabel.Name = "sunsetLabel";
+            this.sunsetLabel.Size = new System.Drawing.Size(69, 18);
+            this.sunsetLabel.TabIndex = 77;
+            this.sunsetLabel.Text = "SUNSET";
+            this.sunsetLabel.Visible = false;
+            // 
+            // sunriseOutput
+            // 
+            this.sunriseOutput.BackColor = System.Drawing.Color.Black;
+            this.sunriseOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sunriseOutput.ForeColor = System.Drawing.Color.White;
+            this.sunriseOutput.Location = new System.Drawing.Point(303, 267);
+            this.sunriseOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sunriseOutput.Name = "sunriseOutput";
+            this.sunriseOutput.Size = new System.Drawing.Size(276, 34);
+            this.sunriseOutput.TabIndex = 78;
+            this.sunriseOutput.Visible = false;
+            // 
+            // sunsetOutput
+            // 
+            this.sunsetOutput.BackColor = System.Drawing.Color.Black;
+            this.sunsetOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sunsetOutput.ForeColor = System.Drawing.Color.White;
+            this.sunsetOutput.Location = new System.Drawing.Point(303, 358);
+            this.sunsetOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sunsetOutput.Name = "sunsetOutput";
+            this.sunsetOutput.Size = new System.Drawing.Size(276, 34);
+            this.sunsetOutput.TabIndex = 79;
+            this.sunsetOutput.Visible = false;
+            // 
+            // pressureLabel
+            // 
+            this.pressureLabel.AutoSize = true;
+            this.pressureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pressureLabel.ForeColor = System.Drawing.Color.White;
+            this.pressureLabel.Location = new System.Drawing.Point(652, 392);
+            this.pressureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pressureLabel.Name = "pressureLabel";
+            this.pressureLabel.Size = new System.Drawing.Size(91, 18);
+            this.pressureLabel.TabIndex = 80;
+            this.pressureLabel.Text = "PRESSURE";
+            this.pressureLabel.Visible = false;
+            // 
+            // humidityLabel
+            // 
+            this.humidityLabel.AutoSize = true;
+            this.humidityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.humidityLabel.ForeColor = System.Drawing.Color.White;
+            this.humidityLabel.Location = new System.Drawing.Point(652, 301);
+            this.humidityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.humidityLabel.Name = "humidityLabel";
+            this.humidityLabel.Size = new System.Drawing.Size(78, 18);
+            this.humidityLabel.TabIndex = 81;
+            this.humidityLabel.Text = "HUMIDITY";
+            this.humidityLabel.Visible = false;
+            // 
+            // humidityOutput
+            // 
+            this.humidityOutput.BackColor = System.Drawing.Color.Black;
+            this.humidityOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.humidityOutput.ForeColor = System.Drawing.Color.White;
+            this.humidityOutput.Location = new System.Drawing.Point(650, 267);
+            this.humidityOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.humidityOutput.Name = "humidityOutput";
+            this.humidityOutput.Size = new System.Drawing.Size(140, 34);
+            this.humidityOutput.TabIndex = 82;
+            this.humidityOutput.Visible = false;
+            // 
+            // pressureOutput
+            // 
+            this.pressureOutput.BackColor = System.Drawing.Color.Black;
+            this.pressureOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pressureOutput.ForeColor = System.Drawing.Color.White;
+            this.pressureOutput.Location = new System.Drawing.Point(650, 358);
+            this.pressureOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pressureOutput.Name = "pressureOutput";
+            this.pressureOutput.Size = new System.Drawing.Size(140, 34);
+            this.pressureOutput.TabIndex = 83;
+            this.pressureOutput.Visible = false;
+            // 
+            // backButton
+            // 
+            this.backButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.backButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.backButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.ForeColor = System.Drawing.Color.White;
+            this.backButton.Location = new System.Drawing.Point(308, 462);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(183, 42);
+            this.backButton.TabIndex = 84;
+            this.backButton.Text = "< Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Visible = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.pressureOutput);
+            this.Controls.Add(this.humidityOutput);
+            this.Controls.Add(this.humidityLabel);
+            this.Controls.Add(this.pressureLabel);
+            this.Controls.Add(this.sunsetOutput);
+            this.Controls.Add(this.sunriseOutput);
+            this.Controls.Add(this.sunsetLabel);
+            this.Controls.Add(this.sunriseLabel);
             this.Controls.Add(this.moreDetailButton);
             this.Controls.Add(this.lastUpdatedLabel);
             this.Controls.Add(this.currentDateLabel);
@@ -244,5 +384,14 @@
         private System.Windows.Forms.Label currentDateLabel;
         private System.Windows.Forms.Label lastUpdatedLabel;
         private System.Windows.Forms.Button moreDetailButton;
+        private System.Windows.Forms.Label sunriseLabel;
+        private System.Windows.Forms.Label sunsetLabel;
+        private System.Windows.Forms.Label sunriseOutput;
+        private System.Windows.Forms.Label sunsetOutput;
+        private System.Windows.Forms.Label pressureLabel;
+        private System.Windows.Forms.Label humidityLabel;
+        private System.Windows.Forms.Label humidityOutput;
+        private System.Windows.Forms.Label pressureOutput;
+        private System.Windows.Forms.Button backButton;
     }
 }
