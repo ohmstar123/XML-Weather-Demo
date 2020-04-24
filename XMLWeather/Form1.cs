@@ -48,6 +48,14 @@ namespace XMLWeather
                 reader.ReadToFollowing("time");
                 d.date = reader.GetAttribute("day");
 
+                // find the symbol element, and get the name attribute
+                reader.ReadToFollowing("symbol");
+                d.condition = reader.GetAttribute("name");
+
+                // find the windSpeed element, and get the name attribute
+                reader.ReadToFollowing("windSpeed");
+                d.windType = reader.GetAttribute("name");
+
                 //find the temperature element, and get the min and max attributes
                 reader.ReadToFollowing("temperature");
                 d.tempLow = reader.GetAttribute("min");

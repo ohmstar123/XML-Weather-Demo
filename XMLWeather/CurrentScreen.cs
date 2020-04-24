@@ -19,6 +19,11 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
+            //varibles
+            string currentTemperature = Form1.days[0].currentTemp;
+            string sunsetTime = Form1.days[0].sunSet;
+            string sunriseTime = Form1.days[0].sunRise;
+            string lastUpdatedTime = Form1.days[0].lastUpdate;
 
             // the current date
             currentDateLabel.Text = DateTime.Now.ToString("dddd MMMM dd yyy");
@@ -29,9 +34,9 @@ namespace XMLWeather
             minOutput.Text = Form1.days[0].tempLow + "°C";
             maxOutput.Text = Form1.days[0].tempHigh + "°C";
             conditionLabel.Text = Form1.days[0].condition + "\n" + Form1.days[0].windType;
-            lastUpdatedLabel.Text = "Last Updated \n" + Form1.days[0].lastUpdate;
-            sunriseOutput.Text = Form1.days[0].sunRise;
-            sunsetOutput.Text = Form1.days[0].sunSet;
+            lastUpdatedLabel.Text = "Last Updated \nDate: " + lastUpdatedTime.Remove(10) + "\nTime: " + lastUpdatedTime.Remove(0,11);
+            sunriseOutput.Text = "Time: " + sunriseTime.Remove(0, 11);
+            sunsetOutput.Text = "Time: " + sunsetTime.Remove(0, 11);
             humidityOutput.Text = Form1.days[0].humidityAmount + Form1.days[0].humidityUnits;
             pressureOutput.Text = Form1.days[0].pressureAmount + Form1.days[0].pressureUnits;
         }
@@ -53,7 +58,6 @@ namespace XMLWeather
 
         private void moreDetailButton_Click(object sender, EventArgs e)
         {
-
             minLabel.Visible = true;
             minOutput.Visible = true;
             maxLabel.Visible = true;

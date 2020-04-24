@@ -23,13 +23,32 @@ namespace XMLWeather
         /// </summary>
         public void displayForecast()
         {
-            date1.Text = Form1.days[1].date;
-            min1.Text = Form1.days[1].tempLow;
-            max1.Text = Form1.days[1].tempHigh;
+            //variables
+            string minimum1 = Form1.days[1].tempLow;
+            string maximum1 = Form1.days[1].tempHigh;
+            string minimum2 = Form1.days[2].tempLow;
+            string maximum2 = Form1.days[2].tempHigh;
+            string minimum3 = Form1.days[3].tempLow;
+            string maximum3 = Form1.days[3].tempHigh;
 
+
+            // Day 1
+            date1.Text = Form1.days[1].date;
+            min1.Text = Form1.days[1].tempLow + "°C";
+            max1.Text = Form1.days[1].tempHigh + "°C";
+            condition1.Text = Form1.days[1].condition + "\n" + Form1.days[1].windType;
+
+            // Day 2
             date2.Text = Form1.days[2].date;
-            min2.Text = Form1.days[2].tempLow;
-            max2.Text = Form1.days[2].tempHigh;
+            min2.Text = Form1.days[2].tempLow + "°C";
+            max2.Text = Form1.days[2].tempHigh + "°C";
+            condition2.Text = Form1.days[2].condition + "\n" + Form1.days[2].windType;
+
+            // Day 3
+            date3.Text = Form1.days[3].date;
+            min3.Text = Form1.days[3].tempLow + "°C";
+            max3.Text = Form1.days[3].tempHigh + "°C";
+            condition3.Text = Form1.days[3].condition + "\n" + Form1.days[3].windType;
         }
 
         /// <summary>

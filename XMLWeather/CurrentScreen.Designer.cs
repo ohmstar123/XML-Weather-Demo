@@ -60,7 +60,7 @@
             this.maxOutput.Location = new System.Drawing.Point(32, 358);
             this.maxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maxOutput.Name = "maxOutput";
-            this.maxOutput.Size = new System.Drawing.Size(104, 34);
+            this.maxOutput.Size = new System.Drawing.Size(127, 34);
             this.maxOutput.TabIndex = 32;
             this.maxOutput.Visible = false;
             // 
@@ -85,7 +85,7 @@
             this.minOutput.Location = new System.Drawing.Point(31, 267);
             this.minOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minOutput.Name = "minOutput";
-            this.minOutput.Size = new System.Drawing.Size(104, 34);
+            this.minOutput.Size = new System.Drawing.Size(128, 34);
             this.minOutput.TabIndex = 30;
             this.minOutput.Visible = false;
             // 
