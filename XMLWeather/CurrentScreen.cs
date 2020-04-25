@@ -92,7 +92,7 @@ namespace XMLWeather
                     break;
             }
 
-            if (System.DateTime.Now.Hour <= 17)
+            if (System.DateTime.Now.Hour <= 17 && System.DateTime.Now.Hour >= 6)
             {
                 backgroundPicture.BackColor = Color.Orange;
                 titleLabel.BackColor = Color.Orange;

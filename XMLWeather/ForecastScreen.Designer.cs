@@ -33,35 +33,37 @@
             this.min1 = new System.Windows.Forms.Label();
             this.minLabel = new System.Windows.Forms.Label();
             this.max1 = new System.Windows.Forms.Label();
-            this.maxLabel = new System.Windows.Forms.Label();
+            this.maxLabel1 = new System.Windows.Forms.Label();
             this.date1 = new System.Windows.Forms.Label();
             this.date2 = new System.Windows.Forms.Label();
             this.min2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.minLabel2 = new System.Windows.Forms.Label();
             this.max2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.maxLabel2 = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
             this.date3 = new System.Windows.Forms.Label();
             this.min3 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.minLabel3 = new System.Windows.Forms.Label();
             this.max3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.maxLabel3 = new System.Windows.Forms.Label();
+            this.line4 = new System.Windows.Forms.Label();
+            this.line1 = new System.Windows.Forms.Label();
+            this.line3 = new System.Windows.Forms.Label();
+            this.line2 = new System.Windows.Forms.Label();
+            this.conditionLabel1 = new System.Windows.Forms.Label();
             this.condition1 = new System.Windows.Forms.Label();
             this.condition2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.conditionLabel2 = new System.Windows.Forms.Label();
             this.condition3 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.conditionLabel3 = new System.Windows.Forms.Label();
             this.conditionPicture1 = new System.Windows.Forms.PictureBox();
             this.conditionPicture2 = new System.Windows.Forms.PictureBox();
             this.conditionPicture3 = new System.Windows.Forms.PictureBox();
+            this.backgroundPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.conditionPicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.conditionPicture2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.conditionPicture3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // forecastLabel
@@ -130,16 +132,16 @@
             this.max1.TabIndex = 45;
             this.max1.Text = "max";
             // 
-            // maxLabel
+            // maxLabel1
             // 
-            this.maxLabel.AutoSize = true;
-            this.maxLabel.ForeColor = System.Drawing.Color.White;
-            this.maxLabel.Location = new System.Drawing.Point(26, 201);
-            this.maxLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.maxLabel.Name = "maxLabel";
-            this.maxLabel.Size = new System.Drawing.Size(133, 20);
-            this.maxLabel.TabIndex = 44;
-            this.maxLabel.Text = "Max Temperature";
+            this.maxLabel1.AutoSize = true;
+            this.maxLabel1.ForeColor = System.Drawing.Color.White;
+            this.maxLabel1.Location = new System.Drawing.Point(26, 201);
+            this.maxLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maxLabel1.Name = "maxLabel1";
+            this.maxLabel1.Size = new System.Drawing.Size(133, 20);
+            this.maxLabel1.TabIndex = 44;
+            this.maxLabel1.Text = "Max Temperature";
             // 
             // date1
             // 
@@ -177,16 +179,16 @@
             this.min2.TabIndex = 68;
             this.min2.Text = "Min";
             // 
-            // label4
+            // minLabel2
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(302, 296);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 20);
-            this.label4.TabIndex = 67;
-            this.label4.Text = " Min Temperature";
+            this.minLabel2.AutoSize = true;
+            this.minLabel2.ForeColor = System.Drawing.Color.White;
+            this.minLabel2.Location = new System.Drawing.Point(302, 296);
+            this.minLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.minLabel2.Name = "minLabel2";
+            this.minLabel2.Size = new System.Drawing.Size(133, 20);
+            this.minLabel2.TabIndex = 67;
+            this.minLabel2.Text = " Min Temperature";
             // 
             // max2
             // 
@@ -200,16 +202,16 @@
             this.max2.TabIndex = 66;
             this.max2.Text = "Max";
             // 
-            // label7
+            // maxLabel2
             // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(302, 201);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 20);
-            this.label7.TabIndex = 65;
-            this.label7.Text = "Max Temperature";
+            this.maxLabel2.AutoSize = true;
+            this.maxLabel2.ForeColor = System.Drawing.Color.White;
+            this.maxLabel2.Location = new System.Drawing.Point(302, 201);
+            this.maxLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maxLabel2.Name = "maxLabel2";
+            this.maxLabel2.Size = new System.Drawing.Size(133, 20);
+            this.maxLabel2.TabIndex = 65;
+            this.maxLabel2.Text = "Max Temperature";
             // 
             // titleLabel
             // 
@@ -247,16 +249,16 @@
             this.min3.TabIndex = 74;
             this.min3.Text = "Min";
             // 
-            // label3
+            // minLabel3
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(577, 296);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 20);
-            this.label3.TabIndex = 73;
-            this.label3.Text = " Min Temperature";
+            this.minLabel3.AutoSize = true;
+            this.minLabel3.ForeColor = System.Drawing.Color.White;
+            this.minLabel3.Location = new System.Drawing.Point(577, 296);
+            this.minLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.minLabel3.Name = "minLabel3";
+            this.minLabel3.Size = new System.Drawing.Size(133, 20);
+            this.minLabel3.TabIndex = 73;
+            this.minLabel3.Text = " Min Temperature";
             // 
             // max3
             // 
@@ -270,59 +272,59 @@
             this.max3.TabIndex = 72;
             this.max3.Text = "Max";
             // 
-            // label6
+            // maxLabel3
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(577, 201);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 20);
-            this.label6.TabIndex = 71;
-            this.label6.Text = "Max Temperature";
+            this.maxLabel3.AutoSize = true;
+            this.maxLabel3.ForeColor = System.Drawing.Color.White;
+            this.maxLabel3.Location = new System.Drawing.Point(577, 201);
+            this.maxLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maxLabel3.Name = "maxLabel3";
+            this.maxLabel3.Size = new System.Drawing.Size(133, 20);
+            this.maxLabel3.TabIndex = 71;
+            this.maxLabel3.Text = "Max Temperature";
             // 
-            // label8
+            // line4
             // 
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(0, 523);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(805, 10);
-            this.label8.TabIndex = 78;
+            this.line4.BackColor = System.Drawing.Color.White;
+            this.line4.Location = new System.Drawing.Point(0, 523);
+            this.line4.Name = "line4";
+            this.line4.Size = new System.Drawing.Size(805, 10);
+            this.line4.TabIndex = 78;
             // 
-            // label9
+            // line1
             // 
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(0, 66);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(805, 10);
-            this.label9.TabIndex = 79;
+            this.line1.BackColor = System.Drawing.Color.White;
+            this.line1.Location = new System.Drawing.Point(0, 66);
+            this.line1.Name = "line1";
+            this.line1.Size = new System.Drawing.Size(805, 10);
+            this.line1.TabIndex = 79;
             // 
-            // label10
+            // line3
             // 
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(525, 76);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(10, 447);
-            this.label10.TabIndex = 80;
+            this.line3.BackColor = System.Drawing.Color.White;
+            this.line3.Location = new System.Drawing.Point(525, 76);
+            this.line3.Name = "line3";
+            this.line3.Size = new System.Drawing.Size(10, 447);
+            this.line3.TabIndex = 80;
             // 
-            // label11
+            // line2
             // 
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(249, 76);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(10, 447);
-            this.label11.TabIndex = 81;
+            this.line2.BackColor = System.Drawing.Color.White;
+            this.line2.Location = new System.Drawing.Point(249, 76);
+            this.line2.Name = "line2";
+            this.line2.Size = new System.Drawing.Size(10, 447);
+            this.line2.TabIndex = 81;
             // 
-            // label1
+            // conditionLabel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(26, 418);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 20);
-            this.label1.TabIndex = 82;
-            this.label1.Text = "Condition";
+            this.conditionLabel1.AutoSize = true;
+            this.conditionLabel1.ForeColor = System.Drawing.Color.White;
+            this.conditionLabel1.Location = new System.Drawing.Point(26, 418);
+            this.conditionLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.conditionLabel1.Name = "conditionLabel1";
+            this.conditionLabel1.Size = new System.Drawing.Size(76, 20);
+            this.conditionLabel1.TabIndex = 82;
+            this.conditionLabel1.Text = "Condition";
             // 
             // condition1
             // 
@@ -348,16 +350,16 @@
             this.condition2.TabIndex = 85;
             this.condition2.Text = "cool";
             // 
-            // label5
+            // conditionLabel2
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(302, 418);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 20);
-            this.label5.TabIndex = 84;
-            this.label5.Text = "Condition";
+            this.conditionLabel2.AutoSize = true;
+            this.conditionLabel2.ForeColor = System.Drawing.Color.White;
+            this.conditionLabel2.Location = new System.Drawing.Point(302, 418);
+            this.conditionLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.conditionLabel2.Name = "conditionLabel2";
+            this.conditionLabel2.Size = new System.Drawing.Size(76, 20);
+            this.conditionLabel2.TabIndex = 84;
+            this.conditionLabel2.Text = "Condition";
             // 
             // condition3
             // 
@@ -371,16 +373,16 @@
             this.condition3.TabIndex = 87;
             this.condition3.Text = "cool";
             // 
-            // label13
+            // conditionLabel3
             // 
-            this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(577, 418);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 20);
-            this.label13.TabIndex = 86;
-            this.label13.Text = "Condition";
+            this.conditionLabel3.AutoSize = true;
+            this.conditionLabel3.ForeColor = System.Drawing.Color.White;
+            this.conditionLabel3.Location = new System.Drawing.Point(577, 418);
+            this.conditionLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.conditionLabel3.Name = "conditionLabel3";
+            this.conditionLabel3.Size = new System.Drawing.Size(76, 20);
+            this.conditionLabel3.TabIndex = 86;
+            this.conditionLabel3.Text = "Condition";
             // 
             // conditionPicture1
             // 
@@ -409,6 +411,14 @@
             this.conditionPicture3.TabIndex = 90;
             this.conditionPicture3.TabStop = false;
             // 
+            // backgroundPicture
+            // 
+            this.backgroundPicture.Location = new System.Drawing.Point(0, 0);
+            this.backgroundPicture.Name = "backgroundPicture";
+            this.backgroundPicture.Size = new System.Drawing.Size(805, 615);
+            this.backgroundPicture.TabIndex = 91;
+            this.backgroundPicture.TabStop = false;
+            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -418,39 +428,41 @@
             this.Controls.Add(this.conditionPicture2);
             this.Controls.Add(this.conditionPicture1);
             this.Controls.Add(this.condition3);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.conditionLabel3);
             this.Controls.Add(this.condition2);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.conditionLabel2);
             this.Controls.Add(this.condition1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.conditionLabel1);
+            this.Controls.Add(this.line2);
+            this.Controls.Add(this.line3);
+            this.Controls.Add(this.line1);
+            this.Controls.Add(this.line4);
             this.Controls.Add(this.date3);
             this.Controls.Add(this.min3);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.minLabel3);
             this.Controls.Add(this.max3);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.maxLabel3);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.date2);
             this.Controls.Add(this.min2);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.minLabel2);
             this.Controls.Add(this.max2);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.maxLabel2);
             this.Controls.Add(this.date1);
             this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.todayLabel);
             this.Controls.Add(this.min1);
             this.Controls.Add(this.minLabel);
             this.Controls.Add(this.max1);
-            this.Controls.Add(this.maxLabel);
+            this.Controls.Add(this.maxLabel1);
+            this.Controls.Add(this.backgroundPicture);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ForecastScreen";
             this.Size = new System.Drawing.Size(805, 615);
             ((System.ComponentModel.ISupportInitialize)(this.conditionPicture1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.conditionPicture2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.conditionPicture3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,31 +475,32 @@
         private System.Windows.Forms.Label min1;
         private System.Windows.Forms.Label minLabel;
         private System.Windows.Forms.Label max1;
-        private System.Windows.Forms.Label maxLabel;
+        private System.Windows.Forms.Label maxLabel1;
         private System.Windows.Forms.Label date1;
         private System.Windows.Forms.Label date2;
         private System.Windows.Forms.Label min2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label minLabel2;
         private System.Windows.Forms.Label max2;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label maxLabel2;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Label date3;
         private System.Windows.Forms.Label min3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label minLabel3;
         private System.Windows.Forms.Label max3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label maxLabel3;
+        private System.Windows.Forms.Label line4;
+        private System.Windows.Forms.Label line1;
+        private System.Windows.Forms.Label line3;
+        private System.Windows.Forms.Label line2;
+        private System.Windows.Forms.Label conditionLabel1;
         private System.Windows.Forms.Label condition1;
         private System.Windows.Forms.Label condition2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label conditionLabel2;
         private System.Windows.Forms.Label condition3;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label conditionLabel3;
         private System.Windows.Forms.PictureBox conditionPicture1;
         private System.Windows.Forms.PictureBox conditionPicture2;
         private System.Windows.Forms.PictureBox conditionPicture3;
+        private System.Windows.Forms.PictureBox backgroundPicture;
     }
 }
