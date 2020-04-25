@@ -8,8 +8,8 @@ namespace XMLWeather
     public class Day
     {
         public string date, currentTemp, currentTime, condition, location, tempHigh, tempLow, 
-            windSpeed, windDirection, windType, precipitation, visibility, lastUpdate, sunSet, sunRise, humidityAmount,
-            humidityUnits, pressureAmount, pressureUnits;
+            windSpeed, windDirection, windType, windSpeedUnits, windDirectionUnits, precipitation, visibility, lastUpdate, sunSet, 
+            sunRise, humidityAmount, humidityUnits, pressureAmount, pressureUnits;
 
         /// <summary>
         /// This will create a blank day object where all values are set to "" initially
@@ -18,7 +18,8 @@ namespace XMLWeather
         {
             date = currentTemp = currentTime = condition = location = tempHigh = tempLow
                 = windSpeed = windDirection = windType = precipitation = visibility = lastUpdate = 
-                sunRise = sunSet = humidityAmount = humidityUnits = pressureAmount = pressureUnits = "";
+                sunRise = sunSet = humidityAmount = humidityUnits = pressureAmount = pressureUnits = windSpeedUnits 
+                = windDirectionUnits = "";
         }
     }
 }

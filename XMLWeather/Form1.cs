@@ -102,7 +102,13 @@ namespace XMLWeather
             // find the wind speed element and add the name attribute, (windType), to days[0], (today)
             reader.ReadToFollowing("wind");
             reader.ReadToFollowing("speed");
+            days[0].windSpeed = reader.GetAttribute("value");
+            days[0].windSpeedUnits = reader.GetAttribute("unit");
             days[0].windType = reader.GetAttribute("name");
+
+            reader.ReadToFollowing("direction");
+            days[0].windDirection = reader.GetAttribute("value");
+            days[0].windDirectionUnits = reader.GetAttribute("code");
 
             // find the symbol element and add the name attribute, (current condition), to days[0], (today)
             reader.ReadToFollowing("weather");

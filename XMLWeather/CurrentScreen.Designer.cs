@@ -44,7 +44,7 @@
             this.sunsetLabel = new System.Windows.Forms.Label();
             this.sunriseOutput = new System.Windows.Forms.Label();
             this.sunsetOutput = new System.Windows.Forms.Label();
-            this.pressureLabel = new System.Windows.Forms.Label();
+            this.windInfoLabel = new System.Windows.Forms.Label();
             this.humidityLabel = new System.Windows.Forms.Label();
             this.humidityOutput = new System.Windows.Forms.Label();
             this.pressureOutput = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@
             this.maxOutput.BackColor = System.Drawing.Color.Black;
             this.maxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.White;
-            this.maxOutput.Location = new System.Drawing.Point(32, 358);
+            this.maxOutput.Location = new System.Drawing.Point(29, 358);
             this.maxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(127, 34);
@@ -265,25 +265,25 @@
             this.sunsetOutput.TabIndex = 79;
             this.sunsetOutput.Visible = false;
             // 
-            // pressureLabel
+            // windInfoLabel
             // 
-            this.pressureLabel.AutoSize = true;
-            this.pressureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pressureLabel.ForeColor = System.Drawing.Color.White;
-            this.pressureLabel.Location = new System.Drawing.Point(652, 392);
-            this.pressureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.pressureLabel.Name = "pressureLabel";
-            this.pressureLabel.Size = new System.Drawing.Size(91, 18);
-            this.pressureLabel.TabIndex = 80;
-            this.pressureLabel.Text = "PRESSURE";
-            this.pressureLabel.Visible = false;
+            this.windInfoLabel.AutoSize = true;
+            this.windInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windInfoLabel.ForeColor = System.Drawing.Color.White;
+            this.windInfoLabel.Location = new System.Drawing.Point(632, 392);
+            this.windInfoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.windInfoLabel.Name = "windInfoLabel";
+            this.windInfoLabel.Size = new System.Drawing.Size(48, 18);
+            this.windInfoLabel.TabIndex = 80;
+            this.windInfoLabel.Text = "WIND";
+            this.windInfoLabel.Visible = false;
             // 
             // humidityLabel
             // 
             this.humidityLabel.AutoSize = true;
             this.humidityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.humidityLabel.ForeColor = System.Drawing.Color.White;
-            this.humidityLabel.Location = new System.Drawing.Point(652, 301);
+            this.humidityLabel.Location = new System.Drawing.Point(632, 301);
             this.humidityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.humidityLabel.Name = "humidityLabel";
             this.humidityLabel.Size = new System.Drawing.Size(78, 18);
@@ -296,7 +296,7 @@
             this.humidityOutput.BackColor = System.Drawing.Color.Black;
             this.humidityOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.humidityOutput.ForeColor = System.Drawing.Color.White;
-            this.humidityOutput.Location = new System.Drawing.Point(650, 267);
+            this.humidityOutput.Location = new System.Drawing.Point(630, 267);
             this.humidityOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.humidityOutput.Name = "humidityOutput";
             this.humidityOutput.Size = new System.Drawing.Size(140, 34);
@@ -308,10 +308,10 @@
             this.pressureOutput.BackColor = System.Drawing.Color.Black;
             this.pressureOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pressureOutput.ForeColor = System.Drawing.Color.White;
-            this.pressureOutput.Location = new System.Drawing.Point(650, 358);
+            this.pressureOutput.Location = new System.Drawing.Point(630, 358);
             this.pressureOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pressureOutput.Name = "pressureOutput";
-            this.pressureOutput.Size = new System.Drawing.Size(140, 34);
+            this.pressureOutput.Size = new System.Drawing.Size(160, 34);
             this.pressureOutput.TabIndex = 83;
             this.pressureOutput.Visible = false;
             // 
@@ -347,7 +347,7 @@
             // conditionPicture2
             // 
             this.conditionPicture2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.conditionPicture2.Location = new System.Drawing.Point(492, 80);
+            this.conditionPicture2.Location = new System.Drawing.Point(495, 83);
             this.conditionPicture2.Name = "conditionPicture2";
             this.conditionPicture2.Size = new System.Drawing.Size(100, 85);
             this.conditionPicture2.TabIndex = 86;
@@ -356,7 +356,7 @@
             // conditionPicture1
             // 
             this.conditionPicture1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.conditionPicture1.Location = new System.Drawing.Point(211, 80);
+            this.conditionPicture1.Location = new System.Drawing.Point(208, 83);
             this.conditionPicture1.Name = "conditionPicture1";
             this.conditionPicture1.Size = new System.Drawing.Size(100, 85);
             this.conditionPicture1.TabIndex = 85;
@@ -383,8 +383,7 @@
             this.Controls.Add(this.pressureOutput);
             this.Controls.Add(this.humidityOutput);
             this.Controls.Add(this.humidityLabel);
-            this.Controls.Add(this.pressureLabel);
-            this.Controls.Add(this.sunsetOutput);
+            this.Controls.Add(this.windInfoLabel);
             this.Controls.Add(this.sunriseOutput);
             this.Controls.Add(this.sunsetLabel);
             this.Controls.Add(this.sunriseLabel);
@@ -400,6 +399,7 @@
             this.Controls.Add(this.minOutput);
             this.Controls.Add(this.minLabel);
             this.Controls.Add(this.tempLabel);
+            this.Controls.Add(this.sunsetOutput);
             this.Controls.Add(this.backgroundPicture);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CurrentScreen";
@@ -429,7 +429,7 @@
         private System.Windows.Forms.Label sunsetLabel;
         private System.Windows.Forms.Label sunriseOutput;
         private System.Windows.Forms.Label sunsetOutput;
-        private System.Windows.Forms.Label pressureLabel;
+        private System.Windows.Forms.Label windInfoLabel;
         private System.Windows.Forms.Label humidityLabel;
         private System.Windows.Forms.Label humidityOutput;
         private System.Windows.Forms.Label pressureOutput;

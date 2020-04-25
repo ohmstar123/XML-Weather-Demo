@@ -40,7 +40,8 @@ namespace XMLWeather
             sunriseOutput.Text = "Time: " + sunriseTime.Remove(0, 11);
             sunsetOutput.Text = "Time: " + sunsetTime.Remove(0, 11);
             humidityOutput.Text = Form1.days[0].humidityAmount + Form1.days[0].humidityUnits;
-            pressureOutput.Text = Form1.days[0].pressureAmount + Form1.days[0].pressureUnits;
+            pressureOutput.Text = Form1.days[0].windSpeed + Form1.days[0].windSpeedUnits + " "
+                + Form1.days[0].windDirection + "°" + Form1.days[0].windDirectionUnits;
 
             // change image in picturebox based on the type of condition
             switch (conditionImage)
@@ -113,7 +114,7 @@ namespace XMLWeather
                 sunsetOutput.BackColor = Color.Orange;
                 humidityLabel.BackColor = Color.Orange;
                 humidityOutput.BackColor = Color.Orange;
-                pressureLabel.BackColor = Color.Orange;
+                windInfoLabel.BackColor = Color.Orange;
                 pressureOutput.BackColor = Color.Orange;
             }
             else
@@ -137,7 +138,7 @@ namespace XMLWeather
                 sunsetOutput.BackColor = Color.Transparent;
                 humidityLabel.BackColor = Color.Transparent;
                 humidityOutput.BackColor = Color.Transparent;
-                pressureLabel.BackColor = Color.Transparent;
+                windInfoLabel.BackColor = Color.Transparent;
                 pressureOutput.BackColor = Color.Transparent;
             }
 
@@ -170,7 +171,7 @@ namespace XMLWeather
             sunsetOutput.Visible = true;
             humidityLabel.Visible = true;
             humidityOutput.Visible = true;
-            pressureLabel.Visible = true;
+            windInfoLabel.Visible = true;
             pressureOutput.Visible = true;
             backButton.Visible = true;
             moreDetailButton.Visible = false;
@@ -188,7 +189,7 @@ namespace XMLWeather
             sunsetOutput.Visible = false;
             humidityLabel.Visible = false;
             humidityOutput.Visible = false;
-            pressureLabel.Visible = false;
+            windInfoLabel.Visible = false;
             pressureOutput.Visible = false;
             backButton.Visible = false;
             moreDetailButton.Visible = true;
