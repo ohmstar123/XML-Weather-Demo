@@ -56,6 +56,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.condition3 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.conditionPicture1 = new System.Windows.Forms.PictureBox();
+            this.conditionPicture2 = new System.Windows.Forms.PictureBox();
+            this.conditionPicture3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.conditionPicture1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conditionPicture2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conditionPicture3)).BeginInit();
             this.SuspendLayout();
             // 
             // forecastLabel
@@ -376,11 +382,41 @@
             this.label13.TabIndex = 86;
             this.label13.Text = "Condition";
             // 
+            // conditionPicture1
+            // 
+            this.conditionPicture1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.conditionPicture1.Location = new System.Drawing.Point(130, 420);
+            this.conditionPicture1.Name = "conditionPicture1";
+            this.conditionPicture1.Size = new System.Drawing.Size(100, 85);
+            this.conditionPicture1.TabIndex = 88;
+            this.conditionPicture1.TabStop = false;
+            // 
+            // conditionPicture2
+            // 
+            this.conditionPicture2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.conditionPicture2.Location = new System.Drawing.Point(410, 418);
+            this.conditionPicture2.Name = "conditionPicture2";
+            this.conditionPicture2.Size = new System.Drawing.Size(100, 85);
+            this.conditionPicture2.TabIndex = 89;
+            this.conditionPicture2.TabStop = false;
+            // 
+            // conditionPicture3
+            // 
+            this.conditionPicture3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.conditionPicture3.Location = new System.Drawing.Point(690, 418);
+            this.conditionPicture3.Name = "conditionPicture3";
+            this.conditionPicture3.Size = new System.Drawing.Size(100, 85);
+            this.conditionPicture3.TabIndex = 90;
+            this.conditionPicture3.TabStop = false;
+            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.conditionPicture3);
+            this.Controls.Add(this.conditionPicture2);
+            this.Controls.Add(this.conditionPicture1);
             this.Controls.Add(this.condition3);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.condition2);
@@ -412,6 +448,9 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ForecastScreen";
             this.Size = new System.Drawing.Size(805, 615);
+            ((System.ComponentModel.ISupportInitialize)(this.conditionPicture1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conditionPicture2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conditionPicture3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,5 +486,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label condition3;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox conditionPicture1;
+        private System.Windows.Forms.PictureBox conditionPicture2;
+        private System.Windows.Forms.PictureBox conditionPicture3;
     }
 }

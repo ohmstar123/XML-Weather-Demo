@@ -32,7 +32,6 @@
             this.maxLabel = new System.Windows.Forms.Label();
             this.minOutput = new System.Windows.Forms.Label();
             this.minLabel = new System.Windows.Forms.Label();
-            this.currentOutput = new System.Windows.Forms.Label();
             this.tempLabel = new System.Windows.Forms.Label();
             this.todayLabel = new System.Windows.Forms.Label();
             this.forecastLabel = new System.Windows.Forms.Label();
@@ -50,6 +49,13 @@
             this.humidityOutput = new System.Windows.Forms.Label();
             this.pressureOutput = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
+            this.windLabel = new System.Windows.Forms.Label();
+            this.conditionPicture2 = new System.Windows.Forms.PictureBox();
+            this.conditionPicture1 = new System.Windows.Forms.PictureBox();
+            this.backgroundPicture = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.conditionPicture2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conditionPicture1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // maxOutput
@@ -101,16 +107,6 @@
             this.minLabel.TabIndex = 29;
             this.minLabel.Text = "MIN TEMP";
             this.minLabel.Visible = false;
-            // 
-            // currentOutput
-            // 
-            this.currentOutput.BackColor = System.Drawing.Color.Transparent;
-            this.currentOutput.ForeColor = System.Drawing.Color.White;
-            this.currentOutput.Location = new System.Drawing.Point(168, 438);
-            this.currentOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.currentOutput.Name = "currentOutput";
-            this.currentOutput.Size = new System.Drawing.Size(33, 20);
-            this.currentOutput.TabIndex = 28;
             // 
             // tempLabel
             // 
@@ -169,11 +165,12 @@
             // 
             // conditionLabel
             // 
+            this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel.ForeColor = System.Drawing.Color.White;
             this.conditionLabel.Location = new System.Drawing.Point(-3, 165);
             this.conditionLabel.Name = "conditionLabel";
-            this.conditionLabel.Size = new System.Drawing.Size(805, 62);
+            this.conditionLabel.Size = new System.Drawing.Size(805, 37);
             this.conditionLabel.TabIndex = 72;
             this.conditionLabel.Text = "Condition ";
             this.conditionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -335,11 +332,53 @@
             this.backButton.Visible = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // windLabel
+            // 
+            this.windLabel.BackColor = System.Drawing.Color.Transparent;
+            this.windLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windLabel.ForeColor = System.Drawing.Color.White;
+            this.windLabel.Location = new System.Drawing.Point(0, 192);
+            this.windLabel.Name = "windLabel";
+            this.windLabel.Size = new System.Drawing.Size(805, 37);
+            this.windLabel.TabIndex = 87;
+            this.windLabel.Text = "Condition Wind";
+            this.windLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // conditionPicture2
+            // 
+            this.conditionPicture2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.conditionPicture2.Location = new System.Drawing.Point(492, 80);
+            this.conditionPicture2.Name = "conditionPicture2";
+            this.conditionPicture2.Size = new System.Drawing.Size(100, 85);
+            this.conditionPicture2.TabIndex = 86;
+            this.conditionPicture2.TabStop = false;
+            // 
+            // conditionPicture1
+            // 
+            this.conditionPicture1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.conditionPicture1.Location = new System.Drawing.Point(211, 80);
+            this.conditionPicture1.Name = "conditionPicture1";
+            this.conditionPicture1.Size = new System.Drawing.Size(100, 85);
+            this.conditionPicture1.TabIndex = 85;
+            this.conditionPicture1.TabStop = false;
+            // 
+            // backgroundPicture
+            // 
+            this.backgroundPicture.Location = new System.Drawing.Point(0, 0);
+            this.backgroundPicture.Name = "backgroundPicture";
+            this.backgroundPicture.Size = new System.Drawing.Size(805, 615);
+            this.backgroundPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.backgroundPicture.TabIndex = 88;
+            this.backgroundPicture.TabStop = false;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.windLabel);
+            this.Controls.Add(this.conditionPicture2);
+            this.Controls.Add(this.conditionPicture1);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.pressureOutput);
             this.Controls.Add(this.humidityOutput);
@@ -360,11 +399,14 @@
             this.Controls.Add(this.maxLabel);
             this.Controls.Add(this.minOutput);
             this.Controls.Add(this.minLabel);
-            this.Controls.Add(this.currentOutput);
             this.Controls.Add(this.tempLabel);
+            this.Controls.Add(this.backgroundPicture);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(805, 615);
+            ((System.ComponentModel.ISupportInitialize)(this.conditionPicture2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conditionPicture1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,7 +417,6 @@
         private System.Windows.Forms.Label maxLabel;
         private System.Windows.Forms.Label minOutput;
         private System.Windows.Forms.Label minLabel;
-        private System.Windows.Forms.Label currentOutput;
         private System.Windows.Forms.Label tempLabel;
         private System.Windows.Forms.Label todayLabel;
         private System.Windows.Forms.Label forecastLabel;
@@ -393,5 +434,9 @@
         private System.Windows.Forms.Label humidityOutput;
         private System.Windows.Forms.Label pressureOutput;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.PictureBox conditionPicture1;
+        private System.Windows.Forms.PictureBox conditionPicture2;
+        private System.Windows.Forms.Label windLabel;
+        private System.Windows.Forms.PictureBox backgroundPicture;
     }
 }
