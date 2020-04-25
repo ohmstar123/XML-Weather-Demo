@@ -26,6 +26,7 @@ namespace XMLWeather
             string conditionImage1 = Form1.days[1].condition;
             string conditionImage2 = Form1.days[2].condition;
             string conditionImage3 = Form1.days[3].condition;
+
             // Day 1
             date1.Text = Form1.days[1].date;
             min1.Text = Form1.days[1].tempLow + "°C";
